@@ -73,8 +73,8 @@ Modeling Steps
 6. Compare predicted vs actual fire counts for 2023
 
 ## References <br>
-[1] IPCC, “Climate Change 2021: The Physical Science Basis,” IPCC, 2021. Available: https://www.ipcc.ch/report/ar6/wg1/. [Accessed: Feb. 25, 2026]
-[2] World Health Organization, “Wildfires,” www.who.int, 2025. Available: https://www.who.int/health-topics/wildfires#tab=tab_1. [Accessed: Feb. 25, 2026]
-[3] J. McKoy, “Death Count for 2025 LA County Wildfires Likely Higher than Records Show, BU Research Finds,” Boston University, Aug. 12, 2025. Available: https://www.bu.edu/articles/2025/death-count-california-wildfires-higher-than-recorded/. [Accessed: Feb. 25, 2026]
-[4] M. Kulkarni, “Random Forest Algorithm in Machine Learning Explained,” Xoriant, Feb. 24, 2026. Available: https://www.xoriant.com/blog/random-forest-algorithm. [Accessed: Feb. 25, 2026]
+[1] IPCC, “Climate Change 2021: The Physical Science Basis,” IPCC, 2021. Available: https://www.ipcc.ch/report/ar6/wg1/. [Accessed: Feb. 25, 2026] <br>
+[2] World Health Organization, “Wildfires,” www.who.int, 2025. Available: https://www.who.int/health-topics/wildfires#tab=tab_1. [Accessed: Feb. 25, 2026] <br>
+[3] J. McKoy, “Death Count for 2025 LA County Wildfires Likely Higher than Records Show, BU Research Finds,” Boston University, Aug. 12, 2025. Available: https://www.bu.edu/articles/2025/death-count-california-wildfires-higher-than-recorded/. [Accessed: Feb. 25, 2026] <br>
+[4] M. Kulkarni, “Random Forest Algorithm in Machine Learning Explained,” Xoriant, Feb. 24, 2026. Available: https://www.xoriant.com/blog/random-forest-algorithm. [Accessed: Feb. 25, 2026] <br>
 [5] “Classification: Accuracy, recall, precision, and related metrics  |  machine learning  |  google for developers,” Google, Available: https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall [Accessed: Mar. 11, 2026]
