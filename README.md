@@ -1,5 +1,5 @@
-**DS 4002, Spring 2026**
-**Group: Freenor's Fourth Years**: Christina Barton, Abby Goss, Rohan Kohli
+**DS 4002, Spring 2026** <br>
+**Freenor's Fourth Years**: Christina Barton, Abby Goss, Rohan Kohli <br>
 **Group Leader:** Christina Barton
 
 # Project 2: Predicting California Wildfires Using Time Series Weather Data and Machine Learning
