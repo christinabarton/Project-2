@@ -120,10 +120,10 @@ Open `scripts/Model.ipynb` in Jupyter and run all cells from top to bottom. This
 
 | Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
 |---|---|---|---|---|---|
-| Logistic Regression | 75.6% | 67.0% | 74.0% | 70.0% | 82% |
-| Random Forest | **76.7%** | **70.0%** | 69.5% | **69.8%** | **83%** |
+| Logistic Regression | 75.6% | 67.0% | **74.0%** | **70.0%** | 82% |
+| Random Forest | **76.7%** | **70.0%** | 69.5% | 69.8% | **83%** |
 
-Both models exceed the project success criteria of >70% recall and >65% accuracy. The Logistic Regression model achieves a higher ROC-AUC (81.5%), making it better at ranking fire risk. However, the Random Forest achieves slightly higher accuracy and precision. For wildfire prediction, where missing a fire is more costly than a false alarm, the Logistic Regression's higher recall may be preferred.
+Both models exceed the project success criteria of >70% recall and >65% accuracy. The Logistic Regression model achieves a higher F1 (74%), making it better at ranking fire risk. However, the Random Forest achieves slightly higher accuracy and precision. For wildfire prediction, where missing a fire is more costly than a false alarm, the Logistic Regression's higher recall and F1 may be preferred.
 
 ---
 
