@@ -1,14 +1,14 @@
 # Predicting Wildfires from Time Series Weather Data
 
-**DS 4002 — Spring 2026**
-**Group: Freenor's Fourth Years** — Christina Barton, Abby Goss, Rohan Kohli
+**DS 4002, Spring 2026**
+**Group: Freenor's Fourth Years**: Christina Barton, Abby Goss, Rohan Kohli
 **Group Leader:** Christina Barton
 
 ---
 
 ## Repository Overview
 
-This repository contains all materials for a machine learning project aimed at predicting whether a wildfire will occur on a given day in California based on daily weather data (temperature, precipitation, wind speed). Models are trained on historical data from 1984–2022 and evaluated on a held-out test set from 2023.
+This repository contains all materials for a machine learning project aimed at predicting whether a wildfire will occur on a given day in California based on daily weather data (temperature, precipitation, wind speed). Models are trained on historical data from 1984–2022 and evaluated on a test set from 2023.
 
 **Research Question:** Can we find seasonal weather patterns and use them to accurately predict wildfires in subsequent years in California?
 
@@ -17,7 +17,7 @@ This repository contains all materials for a machine learning project aimed at p
 ## Section 1: Software and Platform
 
 ### Software
-- **Python 3.13** — all analysis, modeling, and figure generation, run via **Jupyter Notebooks**
+- **Python 3.13**: all analysis, modeling, and figure generation, run via **Jupyter Notebooks**
 
 ### Required Packages
 Install all dependencies with:
@@ -66,11 +66,11 @@ Project-2/
     ├── quantitative_variable_histograms.png  ← Histograms of quantitative variables
     ├── Logistic Regression Confusion Matrix.png  ← Logistic regression confusion matrix
     ├── Random Forest Feature Importance.png      ← Random forest feature importances
-    ├── Temp vs Fire Occurrence.png               ← Max temp vs fire occurrence scatter
     ├── max_temp_vs_avg_wind_speed.png            ← Max temp vs avg wind speed scatter
     ├── maxtemp_fire_nofire.png                   ← Max temp boxplot: fire vs non-fire
     ├── precipitation_fire_nofire.png             ← Precipitation boxplot: fire vs non-fire
     └── windspeed_fire_nofire.png                 ← Wind speed boxplot: fire vs non-fire
+    └── ROC_Curve.png                         ← ROC Curve for Logistic Regression and Random Forest
 ```
 
 ---
@@ -95,14 +95,14 @@ Follow these steps in order to reproduce all results from scratch.
    jupyter notebook
    ```
 
-### Step 1 — Exploratory Data Analysis (`scripts/EDA.ipynb`)
+### Step 1: Exploratory Data Analysis (`scripts/EDA.ipynb`)
 
 Open `scripts/EDA.ipynb` in Jupyter and run all cells from top to bottom. This notebook:
 - Loads `data/CA_Weather_Fire_Dataset_1984-2025.csv`
 - Cleans the data (handles missing values, encodes variables) and saves `data/cleaned_df.csv`
 - Produces all EDA figures saved to `output/`, including temperature trends, wildfire frequency, seasonal breakdowns, class imbalance, correlation heatmap, variable distributions, and fire vs. non-fire comparisons
 
-### Step 2 — Modeling (`scripts/Model.ipynb`)
+### Step 2: Modeling (`scripts/Model.ipynb`)
 
 Open `scripts/Model.ipynb` in Jupyter and run all cells from top to bottom. This notebook:
 - Loads `data/CA_Weather_Fire_Dataset_1984-2025.csv` and applies the same cleaning steps
@@ -120,10 +120,10 @@ Open `scripts/Model.ipynb` in Jupyter and run all cells from top to bottom. This
 
 | Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
 |---|---|---|---|---|---|
-| Logistic Regression | 75.6% | 67.0% | 74.0% | 70.0% | 81.5% |
-| Random Forest | **76.7%** | **70.0%** | 69.5% | **69.8%** | — |
+| Logistic Regression | 75.6% | 67.0% | 74.0% | 70.0% | 82% |
+| Random Forest | **76.7%** | **70.0%** | 69.5% | **69.8%** | **83%** |
 
-Both models exceed the project success criteria of >70% recall and >65% accuracy. The Logistic Regression model achieves a higher ROC-AUC (81.5%), making it better at ranking fire risk; the Random Forest achieves slightly higher accuracy and precision. For wildfire prediction, where missing a fire is more costly than a false alarm, the Logistic Regression's higher recall may be preferred.
+Both models exceed the project success criteria of >70% recall and >65% accuracy. The Logistic Regression model achieves a higher ROC-AUC (81.5%), making it better at ranking fire risk. However, the Random Forest achieves slightly higher accuracy and precision. For wildfire prediction, where missing a fire is more costly than a false alarm, the Logistic Regression's higher recall may be preferred.
 
 ---
 
