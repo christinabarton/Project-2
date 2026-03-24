@@ -14,8 +14,7 @@ Main Branch Folders
   - cleaned_df.csv (cleaned dataset)
 - Output
 - Scripts
-  - EDA Cleaned.ipynb (exploratory analysis on cleaned data)
-  - EDA P2.ipynb (initial exploratory analysis)
+  - EDA.ipynb (exploratory analysis on cleaned data)
   - Model.ipynb (data cleaning, modeling, and evaluation)
 ## Analysis Instructions
 Cleaning the data
